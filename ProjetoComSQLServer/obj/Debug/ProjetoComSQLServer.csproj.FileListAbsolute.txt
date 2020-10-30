@@ -1,0 +1,12 @@
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\bin\Debug\ProjetoComSQLServer.exe.config
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\bin\Debug\ProjetoComSQLServer.exe
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\bin\Debug\ProjetoComSQLServer.pdb
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\obj\Debug\ProjetoComSQLServer.csprojAssemblyReference.cache
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\obj\Debug\ProjetoComSQLServer.Properties.Resources.resources
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\obj\Debug\ProjetoComSQLServer.csproj.GenerateResource.cache
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\obj\Debug\ProjetoComSQLServer.csproj.CoreCompileInputs.cache
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\obj\Debug\ProjetoComSQLServer.exe
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\obj\Debug\ProjetoComSQLServer.pdb
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\obj\Debug\ProjetoComSQLServer.Cadastro.resources
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\obj\Debug\ProjetoComSQLServer.Login_Area.resources
+C:\Users\andre\source\repos\ProjetoComSQLServer\ProjetoComSQLServer\obj\Debug\ProjetoComSQLServer.Model.Produtos.resources

@@ -1,0 +1,20 @@
+﻿create database Bd_ProjetoComSqlServer;
+
+use Bd_ProjetoComSqlServer;
+
+CREATE TABLE tb_usuarios(
+id_user int IDENTITY(1,1) PRIMARY KEY,
+user_nickname varchar(255) not null,
+user_fullname varchar(255) not null,
+user_password varchar(16) not null
+);
+
+CREATE TABLE tb_produtos(
+id_product int not null IDENTITY(1,1) PRIMARY KEY,
+product_name varchar(255) not null,
+product_quantity int not null,
+product_price decimal(15,2) not null
+);
+
+select * from tb_usuarios;
+select * from tb_produtos;
