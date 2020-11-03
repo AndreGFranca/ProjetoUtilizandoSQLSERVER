@@ -15,7 +15,10 @@ namespace ProjetoComSQLServer.Model {
         public ConexaoBanco(){
             con = new SqlConnection(conexaoString);
         }
-        public bool Conectar() {            
+        public bool Conectar() {
+            if (con.State == System.Data.ConnectionState.Open) {
+                return true;
+            }
             con.Open();
             return true;
         }

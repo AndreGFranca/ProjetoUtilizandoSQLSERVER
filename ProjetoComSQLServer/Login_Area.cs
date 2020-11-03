@@ -12,10 +12,12 @@ using ProjetoComSQLServer.Entities;
 
 namespace ProjetoComSQLServer {
     public partial class Login_Area : Form {
-        
+        bool mouseClicked;
+        Point clickedAt;
         public Login_Area() {
             
         InitializeComponent();
+
         }
         private void Btn_Sair_Click(object sender, EventArgs e) {
             this.Close();
@@ -40,6 +42,25 @@ namespace ProjetoComSQLServer {
 
             
 
+        }
+
+        private void Login_Area_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button != MouseButtons.Left) {
+                return;
+            }
+            mouseClicked = true;
+            clickedAt = e.Location;
+
+        }
+
+        private void Login_Area_MouseMove(object sender, MouseEventArgs e) {
+            if (mouseClicked) {
+                this.Location = new Point(Cursor.Position.X - clickedAt.X, Cursor.Position.Y - clickedAt.Y);
+            }
+        }
+
+        private void Login_Area_MouseUp(object sender, MouseEventArgs e) {
+            mouseClicked = false;
         }
     }
 }

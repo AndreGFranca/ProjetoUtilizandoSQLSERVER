@@ -14,6 +14,9 @@ namespace ProjetoComSQLServer {
     public partial class Cadastro : Form {
         public Form Form_Principal { get; set; }
 
+        bool mouseClicked;
+        Point clickedAt;
+
         public Cadastro(Form principal) {
         Form_Principal = principal;
         InitializeComponent();
@@ -37,6 +40,25 @@ namespace ProjetoComSQLServer {
                 Form_Principal.Show();
             }
             
+        }
+
+        private void Cadastro_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button != MouseButtons.Left) {
+                return;
+            }
+            mouseClicked = true;
+            clickedAt = e.Location;
+
+        }
+
+        private void Cadastro_MouseMove(object sender, MouseEventArgs e) {
+            if (mouseClicked) {
+                this.Location = new Point(Cursor.Position.X - clickedAt.X, Cursor.Position.Y - clickedAt.Y);
+            }
+        }
+
+        private void Cadastro_MouseUp(object sender, MouseEventArgs e) {
+            mouseClicked = false;
         }
     }
 }

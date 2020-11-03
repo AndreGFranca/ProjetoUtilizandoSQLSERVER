@@ -92,6 +92,7 @@
             this.Txt_senha.Name = "Txt_senha";
             this.Txt_senha.Size = new System.Drawing.Size(100, 20);
             this.Txt_senha.TabIndex = 6;
+            this.Txt_senha.UseSystemPasswordChar = true;
             // 
             // Txt_senhaR
             // 
@@ -99,6 +100,7 @@
             this.Txt_senhaR.Name = "Txt_senhaR";
             this.Txt_senhaR.Size = new System.Drawing.Size(100, 20);
             this.Txt_senhaR.TabIndex = 7;
+            this.Txt_senhaR.UseSystemPasswordChar = true;
             // 
             // Btn_Cadastrar
             // 
@@ -143,6 +145,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Cadastro";
             this.Text = "Cadastro";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Cadastro_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Cadastro_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Cadastro_MouseUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 

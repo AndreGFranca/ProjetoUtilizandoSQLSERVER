@@ -246,6 +246,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Produtos";
             this.Text = "Produtos";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Produtos_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Produtos_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Produtos_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.db_Grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

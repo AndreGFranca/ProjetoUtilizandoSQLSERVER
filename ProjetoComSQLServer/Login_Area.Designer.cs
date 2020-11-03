@@ -47,6 +47,7 @@
             this.Txt_Senha.Name = "Txt_Senha";
             this.Txt_Senha.Size = new System.Drawing.Size(243, 30);
             this.Txt_Senha.TabIndex = 1;
+            this.Txt_Senha.UseSystemPasswordChar = true;
             // 
             // Btn_Login
             // 
@@ -139,8 +140,12 @@
             this.Controls.Add(this.Txt_Usuario);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Location = new System.Drawing.Point(90, 0);
             this.Name = "Login_Area";
             this.Text = "Form1";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Login_Area_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Login_Area_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Login_Area_MouseUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 

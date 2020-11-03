@@ -16,6 +16,10 @@ namespace ProjetoComSQLServer.Model {
 
         public OperacoesProduto operacoes;
 
+        bool mouseClicked;
+        Point clickedAt;
+
+
         public Produtos(Usuario user) {
             operacoes = new OperacoesProduto();
             User = user;
@@ -83,6 +87,24 @@ namespace ProjetoComSQLServer.Model {
 
             }
 
+        }
+
+        private void Produtos_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button != MouseButtons.Left) {
+                return;
+            }
+            mouseClicked = true;
+            clickedAt = e.Location;
+        }
+
+        private void Produtos_MouseMove(object sender, MouseEventArgs e) {
+            if (mouseClicked) {
+                this.Location = new Point(Cursor.Position.X - clickedAt.X, Cursor.Position.Y - clickedAt.Y);
+            }
+        }
+
+        private void Produtos_MouseUp(object sender, MouseEventArgs e) {
+            mouseClicked = false;
         }
     }
 }
